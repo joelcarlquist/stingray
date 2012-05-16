@@ -2,6 +2,7 @@
 #define STINGRAY_SCENE_SCENE_H
 
 #include <vector>
+#include <string>
 
 namespace stingray_renderer
 {
