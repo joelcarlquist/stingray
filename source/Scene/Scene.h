@@ -4,11 +4,11 @@
 #include <Scene/ForceField.h>
 #include <Scene/LightSource.h>
 #include <Scene/Camera.h>
+#include <vector>
 
 #include <Collision/Shape.h>
 #include <Renderer/Image.h>
 
-#include <stdlib>
 
 namespace stingray_scene
 {
