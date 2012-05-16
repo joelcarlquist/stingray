@@ -8,7 +8,7 @@ using namespace stingray_math;
 using namespace stingray_scene;
 using namespace stingray_renderer;
 
-Scene::Scene()
+Scene::Scene() : m_camera(nullptr)
 {
 
 }
