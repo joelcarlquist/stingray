@@ -4,41 +4,40 @@
 #include <vector>
 #include <string>
 
-namespace stingray_renderer
+namespace stingray
 {
-	class Image;
-}
-
-namespace stingray_collision
-{
-	class Shape;
-}
-
-namespace stingray_scene
-{
-	class Camera;
-	class ForceField;
-	class LightSource;
-
-	class Scene
+	namespace renderer
 	{
-	public:
-		Scene();
-		~Scene();
+		class Image;
+	}
+	
+	namespace scene
+	{
+		class Camera;
+		class ForceField;
+		class LightSource;
+		class Shape;
 
-		void loadSceneFromFile(std::string path);
+		class Scene
+		{
+		public:
+			Scene();
+			~Scene();
 
-		void lightScene();
-		stingray_renderer::Image* getImageFromScene();
-	private:
-		void AddShape(stingray_collision::Shape* shape);
-		void SetCamera(Camera* camera);
+			void loadSceneFromFile(std::string path);
 
-		std::vector<stingray_collision::Shape*> m_shapes;
-		std::vector<ForceField*> m_forceFields;
-		std::vector<LightSource*> m_lightSources;
-		Camera* m_camera;
-	};
+			void lightScene();
+			stingray_renderer::Image* getImageFromScene();
+		private:
+			void AddShape(stingray_collision::Shape* shape);
+			void SetCamera(Camera* camera);
+
+			std::vector<stingray_collision::Shape*> m_shapes;
+			std::vector<ForceField*> m_forceFields;
+			std::vector<LightSource*> m_lightSources;
+			Camera* m_camera;
+		};
+	}
 }
 
 #endif

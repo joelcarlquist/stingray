@@ -3,11 +3,10 @@
 #include <Renderer/Material.h>
 #include <Math/Vec3.h>
 
-using namespace stingray_collision;
-using namespace stingray_renderer;
-using namespace stingray_math;
+using namespace stingray;
+using namespace stingray::scene;
 
-Shape::Shape(Vec3* position, Material* material) :
+Shape::Shape(math::Vec3* position, renderer::Material* material) :
 	m_position(position),
 	m_material(material)
 {

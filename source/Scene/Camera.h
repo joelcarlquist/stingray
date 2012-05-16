@@ -3,19 +3,22 @@
 
 #include <Math/Vec3.h>
 
-namespace stingray_scene
+namespace stingray
 {
-	class Camera
+	namespace scene
 	{
-	public:
-		Camera(stingray_math::Vec3* origin, stingray_math::Vec3* direction, double viewAngle);
-		~Camera();
+		class Camera
+		{
+		public:
+			Camera(stingray_math::Vec3* origin, stingray_math::Vec3* direction, double viewAngle);
+			~Camera();
 
-	private:
-		stingray_math::Vec3* m_origin;
-		stingray_math::Vec3* m_direction;
-		double m_viewAngle;
-	};
+		private:
+			stingray_math::Vec3* m_origin;
+			stingray_math::Vec3* m_direction;
+			double m_viewAngle;
+		};
+	}
 }
 
 #endif

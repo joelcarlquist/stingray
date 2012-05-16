@@ -1,7 +1,8 @@
 
 #include <Math/Vec3.h>
 
-using namespace stingray_math;
+using namespace stingray;
+using namespace stingray::math;
 
 Vec3::Vec3(double s)
 {

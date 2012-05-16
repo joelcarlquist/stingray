@@ -3,13 +3,16 @@
 
 #include <string>
 
-namespace stingray_renderer
+namespace stingray
 {
-	class Image
+	namespace renderer
 	{
-	public:
-		void store(const std::string& path);
-	};
+		class Image
+		{
+		public:
+			void store(const std::string& path);
+		};
+	}
 }
 
 #endif
