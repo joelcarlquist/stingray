@@ -2,11 +2,12 @@
 #include <Renderer/Image.h>
 #include <Scene/Scene.h>
 
-using namespace stingray_scene;
+using namespace stingray;
+using namespace stingray::scene;
 
 int main(int argc, char** argv)
 {
-	stingray_scene::Scene* scene = new Scene();
+	Scene* scene = new Scene();
 	if (argc > 1)
 	{
 		scene->loadSceneFromFile(std::string(argv[1]));
@@ -17,7 +18,7 @@ int main(int argc, char** argv)
 	}
 
 	scene->lightScene();
-	stingray_renderer::Image* image = scene->getImageFromScene();
+	renderer::Image* image = scene->getImageFromScene();
 	if (argc > 2)
 	{
 		image->store(std::string(argv[2]));

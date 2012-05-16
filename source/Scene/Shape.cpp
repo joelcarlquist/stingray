@@ -6,8 +6,8 @@
 using namespace stingray;
 using namespace stingray::scene;
 
-Shape::Shape(math::Vec3* position, renderer::Material* material) :
-	m_position(position),
+Shape::Shape(math::Matrix4x4* transformation, renderer::Material* material) :
+	m_transformation(transformation),
 	m_material(material)
 {
 }

@@ -11,7 +11,7 @@ namespace stingray
 	}
 	namespace math
 	{
-		class Vec3;
+		class Matrix4x4;
 	}
 	
 	namespace scene
@@ -19,13 +19,13 @@ namespace stingray
 		class Shape
 		{
 		public:
-			Shape(math::Vec3* position, renderer::Material* material);
+			Shape(math::Matrix4x4* transformation, renderer::Material* material);
 			~Shape();
 
 			virtual double trace(renderer::Ray* ray) = 0;
 		private:
 			renderer::Material* m_material;
-			math::Vec3* m_position;
+			math::Matrix4x4* m_transformation;
 		};
 	}
 }

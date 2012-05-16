@@ -11,7 +11,7 @@ namespace stingray
 		class Sphere : public Shape
 		{
 		public:
-			Sphere(math::Vec3* position, renderer::Material* material, double radius);
+			Sphere(math::Matrix4x4* transformation, renderer::Material* material, double radius);
 			~Sphere();
 
 			double trace(renderer::Ray* ray);
