@@ -5,17 +5,20 @@
 
 namespace stingray
 {
+	namespace math
+	{
+		class Matrix4x4;
+	}
 	namespace scene
 	{
 		class Camera
 		{
 		public:
-			Camera(stingray_math::Vec3* origin, stingray_math::Vec3* direction, double viewAngle);
+			Camera(math::Matrix4x4* frame, double viewAngle);
 			~Camera();
 
 		private:
-			stingray_math::Vec3* m_origin;
-			stingray_math::Vec3* m_direction;
+			math::Matrix4x4* m_frame;
 			double m_viewAngle;
 		};
 	}
