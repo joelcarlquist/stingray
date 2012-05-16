@@ -31,8 +31,8 @@ namespace stingray_scene
 		void lightScene();
 		stingray_renderer::Image* getImageFromScene();
 	private:
-		AddShape(stingray_collision::Shape* shape);
-		SetCamera(Camera* camera);
+		void AddShape(stingray_collision::Shape* shape);
+		void SetCamera(Camera* camera);
 
 		std::vector<stingray_collision::Shape*> m_shapes;
 		std::vector<ForceField*> m_forceFields;
