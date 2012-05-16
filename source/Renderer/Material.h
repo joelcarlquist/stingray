@@ -5,7 +5,7 @@
 
 namespace stingray_renderer
 {
-	public class Material
+	class Material
 	{
 	public:
 		Material(stingray_math::Vec4* color, double refraction, double reflection);

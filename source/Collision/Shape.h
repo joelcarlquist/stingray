@@ -5,7 +5,7 @@
 
 namespace stingray_collision
 {
-	public class Shape
+	class Shape
 	{
 	public:
 		Shape(stingray_math::Vec3* position, stingray_renderer::Material* material);

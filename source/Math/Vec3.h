@@ -3,7 +3,7 @@
 
 namespace stingray_math
 {
-	public class Vec3
+	class Vec3
 	{
 	public:
 		Vec3();

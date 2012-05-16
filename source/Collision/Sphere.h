@@ -10,7 +10,7 @@ i
 
 namespace stingray_collision
 {
-	public class Sphere : public Shape
+	class Sphere : public Shape
 	{
 	public:
 		Sphere(stingray_math::Vec3* position, stingray_renderer::Material* material, double radius);

@@ -5,7 +5,7 @@
 
 namespace stingray_scene
 {
-	public class Camera
+	class Camera
 	{
 	public:
 		Camera(stingray_math::Vec3* origin, stingray_math::Vec3* direction, double viewAngle);
