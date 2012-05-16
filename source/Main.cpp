@@ -2,7 +2,7 @@
 #include <Renderer/Image.h>
 #include <Scene/Scene.h>
 
-static int main(int argc, char** argv)
+int main(int argc, char** argv)
 {
 	stingray_scene::Scene* scene = new Scene();
 	if (argc > 1)
