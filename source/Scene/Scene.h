@@ -1,17 +1,24 @@
 #ifndef STINGRAY_SCENE_SCENE_H
 #define STINGRAY_SCENE_SCENE_H
 
-#include <Scene/ForceField.h>
-#include <Scene/LightSource.h>
-#include <Scene/Camera.h>
 #include <vector>
 
-#include <Collision/Shape.h>
-#include <Renderer/Image.h>
+namespace stingray_renderer
+{
+	class Image;
+}
 
+namespace stingray_collision
+{
+	class Shape;
+}
 
 namespace stingray_scene
 {
+	class Camera;
+	class ForceField;
+	class LightSource;
+
 	public class Scene
 	{
 	public:
