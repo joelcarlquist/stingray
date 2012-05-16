@@ -13,8 +13,7 @@ namespace stingray_collision
 	public class Sphere : public Shape
 	{
 	public:
-		Sphere(stingray_math::Vec3* position, double radius, 
-		       stingray_renderer::Material* material);
+		Sphere(stingray_math::Vec3* position, stingray_renderer::Material* material, double radius);
 		~Sphere();
 
 		double trace(stingray_renderer::Ray* ray);
