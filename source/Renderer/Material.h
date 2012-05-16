@@ -1,8 +1,10 @@
 #ifndef STINGRAY_RENDERER_MATERIAL_H
 #define STINGRAY_RENDERER_MATERIAL_H
 
-#include <Math/Vec4.h>
-
+namespace stingray_math
+{
+	class Vec4;
+}
 namespace stingray_renderer
 {
 	class Material

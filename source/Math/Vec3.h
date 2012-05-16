@@ -8,7 +8,7 @@ namespace stingray_math
 	public:
 		Vec3();
 		Vec3(double s);
-		Vec3(double x, double, y, double z);
+		Vec3(double x, double y, double z);
 		~Vec3();
 
 		double x() { return m_val[0]; }
@@ -20,8 +20,7 @@ namespace stingray_math
 		void z(double z) { m_val[2] = z; }
 
 	private:
-		double[3] m_val;
-	}
+		double m_val[3];
 	};
 }
 
