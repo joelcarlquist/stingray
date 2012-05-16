@@ -1,5 +1,8 @@
 #include <Scene/Scene.h>
 
+#include <Collision/Sphere.h>
+#include <Renderer/Material.h>
+
 using namespace stingray_math;
 
 namespace stingray_scene
