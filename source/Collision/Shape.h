@@ -8,12 +8,13 @@ namespace stingray_collision
 	public class Shape
 	{
 	public:
-		Shape(stingray_renderer::Material* material);
+		Shape(stingray_math::Vec3* position, stingray_renderer::Material* material);
 		~Shape();
 
 		double trace(stingray_renderer::Ray* ray) = 0;
 	private:
 		stingray_renderer::Material* m_material;
+		stingray_math::Vec3* m_position;
 	};
 }
 

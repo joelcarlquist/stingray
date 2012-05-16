@@ -18,7 +18,6 @@ namespace stingray_collision
 
 		double trace(stingray_renderer::Ray* ray);
 	private:
-		stingray_math::Vec3* m_position;
 		double m_radius;
 	}
 }
