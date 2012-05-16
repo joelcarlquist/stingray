@@ -5,7 +5,7 @@
 
 namespace stingray_renderer
 {
-	public class Ray
+	class Ray
 	{
 	public:
 		Ray(stingray_math::Vec3* origin, stingray_math::Vec3* direction, double range);
@@ -14,7 +14,7 @@ namespace stingray_renderer
 		stingray_math::Vec3* m_origin;
 		stingray_math::Vec3* m_direction;
 		double m_range;
-	}
+	};
 }
 
 #endif

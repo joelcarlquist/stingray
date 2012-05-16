@@ -22,6 +22,7 @@ namespace stingray_math
 	private:
 		double[3] m_val;
 	}
+	};
 }
 
 #endif
