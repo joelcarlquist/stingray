@@ -2,6 +2,7 @@
 
 #include <Collision/Sphere.h>
 #include <Renderer/Material.h>
+#include <Math/constants.h>
 
 using namespace stingray_math;
 using namespace stingray_scene;
@@ -31,7 +32,7 @@ void Scene::loadSceneFromFile(std::string path)
 		                    0.5));
 		SetCamera(new Camera(new Vec3(-1.5, -1.5, -1.5), 
 		                     new Vec3(1.0, 1.0, 1.0), 
-							 1.5 * MATH_PI));
+							 1.5 * pi));
 	}
 	// Non-default scene is not supported
 	else
