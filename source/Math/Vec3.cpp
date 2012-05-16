@@ -3,14 +3,15 @@
 
 using namespace stingray_math;
 
-Vec3::Vec3(double s) : Vec3(s,s,s)
+Vec3::Vec3(double s)
 {
+	m_val[0] = m_val[1] = m_val[2] = s;
 }
-Vec3::Vec3(double x, double, y, double z)
+Vec3::Vec3(double x, double y, double z)
 {
-	val[0] = x;
-	val[1] = y;
-	val[2] = z;
+	m_val[0] = x;
+	m_val[1] = y;
+	m_val[2] = z;
 }
 Vec3::~Vec3()
 {

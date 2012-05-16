@@ -24,7 +24,7 @@ int main(int argc, char** argv)
 	}
 	else
 	{
-		image->store(std::string("temp.png");
+		image->store(std::string("temp.png"));
 	}
 	delete image;
 	delete scene;
