@@ -20,7 +20,7 @@ namespace stingray_scene
 	class ForceField;
 	class LightSource;
 
-	public class Scene
+	class Scene
 	{
 	public:
 		Scene();
