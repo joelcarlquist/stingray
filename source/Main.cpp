@@ -2,6 +2,8 @@
 #include <Renderer/Image.h>
 #include <Scene/Scene.h>
 
+using namespace stingray_scene;
+
 int main(int argc, char** argv)
 {
 	stingray_scene::Scene* scene = new Scene();
