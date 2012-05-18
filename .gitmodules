@@ -1,0 +1,3 @@
+[submodule "deps/cml"]
+	path = deps/cml
+	url = git://github.com/hyarion/CML--Git-Mirror-.git
