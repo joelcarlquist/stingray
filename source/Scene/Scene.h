@@ -27,12 +27,12 @@ namespace stingray
 			void loadSceneFromFile(std::string path);
 
 			void lightScene();
-			stingray_renderer::Image* getImageFromScene();
+			renderer::Image* getImageFromScene();
 		private:
-			void AddShape(stingray_collision::Shape* shape);
+			void AddShape(Shape* shape);
 			void SetCamera(Camera* camera);
 
-			std::vector<stingray_collision::Shape*> m_shapes;
+			std::vector<Shape*> m_shapes;
 			std::vector<ForceField*> m_forceFields;
 			std::vector<LightSource*> m_lightSources;
 			Camera* m_camera;
