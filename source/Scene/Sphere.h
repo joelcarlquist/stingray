@@ -1,7 +1,7 @@
 #ifndef STINGRAY_COLLISION_SPHERE_H
 #define STINGRAY_COLLISION_SPHERE_H
 
-#include <Collision/Shape.h>
+#include <Scene/Shape.h>
 
 
 namespace stingray
