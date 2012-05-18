@@ -26,16 +26,16 @@ def createFileList(path, tree):
 project_source_tree = [
 	'Main.cpp',
 	{
-		'Collision': [
-			'Shape.cpp',
-		],
 		'Math': [
 			'Vec3.cpp'
 		],
 		'Renderer': [
+			'Image.cpp',
+
 		],
 		'Scene': [
-			'Scene.cpp'
+			'Scene.cpp',
+			'Shape.cpp'
 		],
 	}
 ]
