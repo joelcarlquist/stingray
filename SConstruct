@@ -1,9 +1,12 @@
 
 import os
 
+
 env = Environment()
+env.VariantDir('build/', 'source/', duplicate=0)
 
 env.Append(CPPPATH='source')
+env.Append(CPPFLAGS='-std=c++0x')
 env.Replace(CXX='clang++')
 
 def createFileList(path, tree):
@@ -23,20 +26,20 @@ def createFileList(path, tree):
 project_source_tree = [
 	'Main.cpp',
 	{
-		'Collision': [
-			'Shape.cpp',
-		],
 		'Math': [
 			'Vec3.cpp'
 		],
 		'Renderer': [
+			'Image.cpp',
+
 		],
 		'Scene': [
-			'Scene.cpp'
+			'Scene.cpp',
+			'Shape.cpp'
 		],
 	}
 ]
 
-sources = createFileList('source', project_source_tree)
+sources = createFileList('build', project_source_tree)
 
 env.Program(target='stingray', source=sources)

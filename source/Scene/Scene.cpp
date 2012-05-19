@@ -1,8 +1,10 @@
 #include <Scene/Scene.h>
 
-#include <Collision/Sphere.h>
+#include <Scene/Sphere.h>
 #include <Renderer/Material.h>
 #include <Math/constants.h>
+#include <Math/Vec3.h>
+#include <Math/Vec4.h>
 
 using namespace stingray;
 using namespace stingray::scene;

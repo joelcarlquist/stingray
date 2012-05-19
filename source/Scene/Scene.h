@@ -33,7 +33,7 @@ namespace stingray
 			// Returns 0 if success
 			// returns 1 not all parameters required was set
 			int lightScene();
-			stingray_renderer::Image* getImageFromScene();
+			renderer::Image* getImageFromScene();
 		private:
 			void addShape(stingray_collision::Shape* shape);
 			void setCamera(Camera* camera);
@@ -41,7 +41,7 @@ namespace stingray
 			void setLightingType(const std::string& lightingType);
 			void setBroadphaseType(const std::string& broadphaseType);
 
-			std::vector<stingray_collision::Shape*>* m_shapes;
+			std::vector<collision::Shape*>* m_shapes;
 			std::vector<ForceField*> m_forceFields;
 			std::vector<LightSource*> m_lightSources;
 			Camera* m_camera;
