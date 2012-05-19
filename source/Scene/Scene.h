@@ -40,6 +40,8 @@ namespace stingray
 			
 			void setLightingType(const std::string& lightingType);
 			void setBroadphaseType(const std::string& broadphaseType);
+			void setRayTracerGranularity(const std::string& granularity);
+			void setResolution(unsigned int width, unsigned int height);
 
 			std::vector<collision::Shape*>* m_shapes;
 			std::vector<ForceField*> m_forceFields;
@@ -47,6 +49,8 @@ namespace stingray
 			Camera* m_camera;
 			Broadphase* m_broadphase;
 			renderer::LightingController* m_lighting;
+			unsigned int m_granularity;
+			unsigned int m_width, m_height;
 		};
 	}
 }
