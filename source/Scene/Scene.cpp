@@ -16,9 +16,12 @@ Scene::Scene() : m_camera(NULL), m_broadphase(NULL), m_lighting(NULL)
 
 Scene::~Scene()
 {
-	for(Shape* shape in m_shapes)
+	for(
+		std::vector<Shape*>::iterator it=m_shapes->begin(),end=m_shapes->end();
+		it!=end;
+		++it)
 	{
-		delete shape;
+		delete *it;
 	}
 	delete m_shapes;
 }
