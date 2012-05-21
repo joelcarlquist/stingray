@@ -35,7 +35,7 @@ namespace stingray
 			int lightScene();
 			renderer::Image* getImageFromScene();
 		private:
-			void addShape(stingray_collision::Shape* shape);
+			void addShape(Shape* shape);
 			void setCamera(Camera* camera);
 			
 			void setLightingType(const std::string& lightingType);
@@ -43,7 +43,7 @@ namespace stingray
 			void setRayTracerGranularity(const std::string& granularity);
 			void setResolution(unsigned int width, unsigned int height);
 
-			std::vector<collision::Shape*>* m_shapes;
+			std::vector<Shape*>* m_shapes;
 			std::vector<ForceField*> m_forceFields;
 			std::vector<LightSource*> m_lightSources;
 			Camera* m_camera;
