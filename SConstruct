@@ -6,7 +6,7 @@ import os
 env = Environment()
 env.VariantDir('build/', 'source/', duplicate=0)
 
-env.Append(CPPPATH='source')
+env.Append(CPPPATH=['source'])
 env.Append(CPPFLAGS='-std=c++0x')
 env.Replace(CXX='clang++')
 
